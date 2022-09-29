@@ -1,0 +1,47 @@
+body{
+width:100vw;
+height: 50vh;
+}
+#main-div{
+background-color: cadetblue;
+    border: 2px solid brown;
+    width: 40%;
+   height:38%;
+   margin:200px auto;
+}
+#stopwatch-div{
+    background-color:ghostwhite;
+    border: 2px solid black;
+    width:40%;
+    height: 45%;
+    margin: 34px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#stopwatch-div p{
+    color: darkturquoise;
+
+    font-size: 24px;
+}
+#button-div{
+    position: absolute;
+    top:55%;
+    left: 40%;
+    /* display: flex;
+    justify-content: center; */
+    width: 20%;
+    height: 6%;
+}
+#button-div button{
+    font-size: 20px;
+    border-radius: 20%;
+    background-color: azure;
+    width: 32%;
+    height: 90%;
+}
+#button-div button:hover{
+    cursor: pointer;
+    background-color: cyan;
+
+}
