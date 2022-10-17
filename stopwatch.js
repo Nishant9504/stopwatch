@@ -6,9 +6,11 @@ var milliSeconds=document.getElementById('millisec');
  var stopButton=document.getElementById('stop');
  var resetButton=document.getElementById('reset');
  var interval;
+//  adding eventLiistener to start button
 startButton.addEventListener('click',function(){
     clearInterval(interval);
     console.log("clicked");
+    // setting callBack function (setInterval) and calling function inside it after every 10 millisec. 
   interval= setInterval(function(){
         milliSec++;
         if(milliSec<10){
@@ -33,8 +35,11 @@ startButton.addEventListener('click',function(){
 });
 stopButton.addEventListener('click',function(){
     console.log("stop");
-  clearInterval(interval);
+// adding clearInterval function to stop the event happening
+clearInterval(interval);
 });
+
+// To reset the stopwatch
 resetButton.addEventListener('click',function(){
     console.log("reset"); 
     clearInterval(interval);
